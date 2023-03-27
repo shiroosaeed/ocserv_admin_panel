@@ -1,0 +1,340 @@
+.basic-card {
+    background: #fff;
+     margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 355px;
+}
+.main-title-head{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    padding: 0 20px;
+    height: 3.1rem;
+    position: relative;
+    border-bottom: 1px solid $gray-200;
+}
+.card-head{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+.first-graph{
+    background: $all-background;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-height: 530px;
+}
+.card_content{
+    padding: 20px;
+    p{
+    color: $main-color;
+}}
+.first-graph span{
+    font-size: $font-size + 6px;
+
+}
+.widget-detail{
+    display: inline-flex;
+    width: 100%;
+    border-bottom: 1px dashed #ebedf2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.widget-detail-text{
+    padding: 0px 15px;
+    width: 100%;
+}
+.widget-detail-text span{
+    font-size: $font-size + 2px;
+}
+.widget-detail-text span:last-child{
+    font-size: $font-size ;
+    color: $inner-bg-first;
+}
+
+
+.package-detail{
+    background: #5075e4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.package-main-title span{
+    font-size: $font-size + 6px;
+    color: $all-background;
+}
+.first-package-info{
+    background: $all-background;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.package-title span{
+    font-size: $font-size + 4px;
+    color: $main-color;
+}
+.package-inner-item{
+    width: 100%;
+display: table;
+table-layout: fixed;
+}
+.package-content{
+    display: table-cell;
+}
+.package-count{
+    font-weight: 600;
+    font-size: $font-size + 6px;
+}
+.package-count-1{
+    color: #00c5dc;
+}
+.package-count-2{
+    color: #716aca;
+}
+.package-count-3{
+    color: #fe21be;
+}
+.package-content > span:first-child{
+    color: #9699a2;
+    font-size: $font-size ;
+}
+
+
+.counter-card{
+    background: $all-background;
+    padding: 15px;
+    @media only screen and (min-width:1024px) and (max-width:1240px){
+        min-height: 134px;
+    }
+}
+.align-count{
+    align-items: center !important;
+}
+.text-muted {
+    color: #6c757d !important;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.text-primary{
+    color: #fb9678 !important;
+    font-size: $font-size + 16px;
+}
+.color-count-1 .text-primary{
+    color: #01c0c8 !important;
+}
+.color-count-1 .progress-bar{
+    background: #01c0c8 !important;
+}
+.color-count-2 .text-primary{
+    color: #ab8ce4 !important;
+}
+.color-count-2 .progress-bar{
+    background: #ab8ce4 !important;
+}
+.color-count-3 .text-primary{
+    color: #00c292 !important;
+}
+.color-count-3 .progress-bar{
+    background: #00c292 !important;
+}
+.align-count i{
+    font-size: $font-size + 11px;
+    color: $gray-600;
+}
+.progress{
+    height: 6px;
+    margin-top: 10px;
+}
+.progress-bar{
+    background: #fb9678 !important;
+}
+
+.basic-card-table {
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table.table-dark>thead>tr>th {
+    border-color: #32383e !important;
+}
+
+table.table-dark>tbody>tr>td {
+    border-color: #32383e !important;
+}
+
+table.table-dark>tbody>tr>th {
+    border-color: #32383e !important;
+}
+
+.card-in-info .card-header strong {
+    font-weight: bold;
+    font-size: 16px;
+}
+.card-in-info .card-footer strong {
+    font-weight: bold;
+    font-size: 16px;
+}
+.card-in-info .location.text-sm-center {
+    font-size: 16px;
+}
+.card-header i.fa {
+    color: #000 !important;
+    font-size: 16px;
+}
+.card-in-info i.fa {
+    color: #878787;
+    font-size: 16px;
+}
+
+.card .user-header .media img {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.card-in-info ul li a {
+    color: #878787;
+    font-size: 16px;
+}
+
+.card-in-info .media-body h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.card-in-info .media-body p {
+    color: #878787;
+}
+
+.blue-ribon {
+    background: url(../images/twitter_corner_blue.png) no-repeat;
+}
+.corner-ribon {
+    text-align: center;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+}
+
+.corner-ribon i {
+    padding: 10px 0 0 35px;
+    color: #fff !important;
+}
+
+.card-in-info .card-body p {
+    color: #878787;
+}
+
+.card-in-info .card-body a {
+    color: #878787;
+}
+.card-in-info .card-body h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.card-in-info .card-body a:hover {
+    color: #000;
+}
+
+.black-ribon {
+    background: url(../images/twitter_corner_black.png) no-repeat;
+}
+.twt-feed.blue-bg {
+    background: #58C9F3;
+}
+
+
+
+@media (max-width: 1368px){
+.twt-feed {
+    max-height: 155px;
+}
+.twt-category {
+    margin-bottom: 0;
+}
+}
+.twt-feed {
+    -webkit-border-radius: 4px 4px 0 0;
+    color: #FFFFFF;
+    padding: 40px 10px 10px;
+    position: relative;
+    min-height: 170px;
+}
+
+.twt-feed .wtt-mark {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 160px;
+    position: absolute;
+    top: 10px;
+    left: 40%;
+}
+
+
+
+
+
+.twt-category {
+    display: inline-block;
+    margin-bottom: 11px;
+    margin-top: 10px;
+    width: 100%;
+}
+.weather-category {
+    padding: 15px 0;
+    color: #74829C;
+}
+
+.twt-category ul li {
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+.weather-category ul li {
+    width: 32%;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    display: inline-block;
+}
+
+.weather-category ul li:last-child {
+    border-right: none;
+}
+
+.twt-footer, .twt-footer a {
+    color: #d2d2d2;
+    font-size: 16px;
+}
+
+.twt-footer {
+    padding: 12px 15px;
+}
+
+footer.blockquote-footer.text-light {
+    font-size: 16px;
+}
+
+.bg-primary {
+    background-color: #007bff!important
+}
