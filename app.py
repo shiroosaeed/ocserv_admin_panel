@@ -30,8 +30,8 @@ def users():
 
     for user in output:
         user_new = []
-        for i in user:
-            user_new.append(i.replace(" ", '-'))
+        for (i, key) in user:
+            user_new.append({i.replace(" ", '-'), key})
         users.append(user_new)
 
     return users
