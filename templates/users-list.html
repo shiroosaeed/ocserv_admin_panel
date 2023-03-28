@@ -73,7 +73,7 @@ let app = new Vue({
   methods:{
     getUserList:function(){
       
-      axios.get('{{ url_for("users_list") }}')
+      axios.get('{{ url_for("users") }}')
       .then(response => {
         this.user_list = response.data
       })
