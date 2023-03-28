@@ -1,0 +1,106 @@
+
+
+{% include 'inc/common-head.html' %}
+
+{% include 'inc/common-header.html' %}
+
+                <div class="container"  id="app">
+                    <div class="counters">
+                      
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="basic-card-table shadow">
+                                    <div class="card-header">
+                                        <div class="card-head">
+                                            <div class="head-title">
+                                                <h3 class="head-text">
+                                                    کاربران
+                                                </h3>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                    <div class="card_content">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">نام کاربری</th>
+                                                <th scope="col">پسورد</th>
+                                                <th scope="col">وضعیت کاربر</th>
+                                                <th scope="col">زمان کانکت </th>
+                                                <th scope="col">آیپی </th>
+                                                <th scope="col">میزان مصرف </th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td>Osdfsdftto</td>
+                                                <td>sdfsdfs</td>
+                                                <td>sdfsdfs</td>
+                                                <td>sdfsdfs</td>
+                                                <td>sdfsdfs</td>
+                                              </tr>
+
+                                            </tbody>
+                                          </table>
+    
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+        
+                
+
+<script>
+
+
+let app = new Vue({
+  delimiters: ['[[[', ']]]'],
+  el: '#app',
+  data: {
+    user_list:[]
+  },
+  methods:{
+    getUserList:function(){
+      
+      axios.get('https://jsonplaceholder.typicode.com/users')
+      .then(response => {
+        this.user_list = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
+
+
+     }
+    },
+
+    mounted: function () {
+  
+      this.getUserList()
+}
+
+  
+  
+})
+            
+
+
+
+
+</script>
+
+
+
+
+{% include 'inc/common-footer.html' %}
