@@ -34,7 +34,7 @@ def users():
             user_new.push(user.replace(" ", '-'))
         users.push(user_new)
 
-    return output
+    return users
 
 
 # app runing
