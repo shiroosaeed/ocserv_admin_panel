@@ -27,15 +27,12 @@ def users():
 
     output = json.loads(output)
 
-    final_users = []
-    for user in output:
-        users = []
+    for iop, user in output:
         for i, u in user.items():
             newi = i.replace(" ", '-')
-            users.append((newi, u))
-        final_users.append(users)
-
-    return final_users
+            user[i] = user[newi][u]
+        output[iop] = user
+    return output
 
 
 # app runing
