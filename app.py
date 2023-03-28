@@ -23,7 +23,7 @@ def users_list():
 
 
 # api section
-@app.route('/user_list')
+@app.route('/users_list')
 def users():
     output = os.popen('sudo occtl -j show users').read()
     
