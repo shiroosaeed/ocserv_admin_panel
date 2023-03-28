@@ -32,7 +32,7 @@ def users():
 
         for u, i in list(user.items()):
             u = u.replace(" ", "-")
-            newu = u.replace("_", "")
+            newu = u.replace("_", "a")
             user[newu] = i
 
         newusers.append(user)
