@@ -29,7 +29,7 @@ def users():
 
     newusers = []
     for user in users:
-        newusers = []
+
         for u, i in list(user.items()):
             newu = u.replace(" ", "-")
             user[newu] = i
