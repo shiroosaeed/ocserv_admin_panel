@@ -4,7 +4,7 @@
 
 {% include 'inc/common-header.html' %}
 
-                <div class="container"  id="app">
+                <div class="container" >
                     <div class="counters">
                       
 
@@ -30,19 +30,19 @@
                                                 <th scope="col">پسورد</th>
                                                 <th scope="col">وضعیت کاربر</th>
                                                 <th scope="col">زمان کانکت </th>
-                                                <th scope="col">آیپی </th>
+                                                <th scope="col">برنامه </th>
                                                 <th scope="col">میزان مصرف </th>
                                               </tr>
                                             </thead>
                                             <tbody>
-                                              <tr>
+                                              <tr v-for="user in user_list">
                                                 <th scope="row">1</th>
-                                                <td></td>
-                                                <td>Osdfsdftto</td>
-                                                <td>sdfsdfs</td>
-                                                <td>sdfsdfs</td>
-                                                <td>sdfsdfs</td>
-                                                <td>sdfsdfs</td>
+                                                <td>[[[ user.Username ]]]</td>
+                                                <td>[[[ user.Username ]]]</td>
+                                                <td>[[[ user.State ]]]</td>
+                                                <td>[[[ user._Connected at ]]]</td>
+                                                <td>[[[ user.User-Agent ]]]</td>
+                                                <td>[[[ user._Connected at ]]]</td>
                                               </tr>
 
                                             </tbody>
