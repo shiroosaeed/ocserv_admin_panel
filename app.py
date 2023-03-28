@@ -26,16 +26,13 @@ def users():
     output = os.popen('sudo occtl -j show users').read()
 
     output = json.loads(output)
-    output = os.popen('sudo occtl -j show users').read()
-
-    output = json.loads(output)
 
     final_users = []
     for user in output:
         users = []
         for i, u in user.items():
             newi = i.replace(" ", '-')
-            users.append({newi: u})
+            users.append((newi, u))
         final_users.append(users)
 
     return final_users
