@@ -31,9 +31,7 @@ def users():
     for user in users:
 
         for u, i in list(user.items()):
-            u = u.replace(" ", "")
-            newu = u.replace("_", "")
-            user[u]  = ""
+            newu = u.replace(" ", "")
             user[newu] = i
 
         newusers.append(user)
